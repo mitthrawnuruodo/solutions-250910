@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - My Website</title>
+</head>
+<body>
+  <header>
+    <h1 style="text-align:center;">Welcome to My Website</h1>
+    <nav style="text-align:center;">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>Home Page</h2>
+      <p>
+        This is the homepage of my site. It demonstrates
+        <strong>text formatting</strong> with <em>semantic tags</em>,
+        a <mark>highlight</mark>, and a small note
+        <small>(fine print)</small>. Water is H<sub>2</sub>O and 2<sup>10</sup>=1024.
+        Also, <abbr title="HyperText Markup Language">HTML</abbr> matters.
+      </p>
+    </section>
+
+    <section>
+      <h3>My Interests</h3>
+      <!-- Unordered list with a nested list -->
+      <ul>
+        <li>Programming
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML &amp; CSS</li>
+          </ul>
+        </li>
+        <li>Coffee</li>
+        <li>Reading</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Navigate with a Button</h3>
+      <!-- Button that navigates to About using JS -->
+      <button id="goAboutBtn" type="button" title="Go to About page">
+        Go to About
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p style="text-align:center;"><small>&copy; 2025 My Website</small></p>
+  </footer>
+
+  <script>
+    // Vanilla JS: navigate on button click
+    document.getElementById("goAboutBtn").addEventListener("click", function () {
+      window.location.href = "about.html";
+    });
+  </script>
+</body>
+</html>
